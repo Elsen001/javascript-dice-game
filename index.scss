@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+
+#container{
+    width: 100%;
+    margin-top: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: red;
+    position: relative;
+    .zer,.zer2{
+         width: 150px;
+         height: 100px;
+         background-color: white;
+         margin: 50px;
+         border-radius: 10%;
+         text-align: center;
+         line-height: 100px;
+         font-size: 30px;
+         font-weight: bold;
+    }
+    .money{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        font-size: 30px;
+        h3{
+        font-size: 30px;
+        margin-left: 10px;
+
+        }
+    }
+    
+}
+
+.shot-container{
+    text-align: center;
+    margin: 30px auto;
+    #shot{
+        width: 100px;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .radio{
+        color: white;
+        button{
+            width: 100px;
+            padding: 5px;
+            cursor: pointer;
+            
+        }
+        :first-child{
+            background-color: yellow;
+        }
+        :nth-of-type(2){
+            background-color: green;
+        }
+        :last-child{
+            background-color: red;
+        }
+    }
+}
+
+.hesab{
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    display: none;
+}
+#btn{
+    display: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(156, 156, 228);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.animatelsh{
+    animation: anime;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes anime{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
